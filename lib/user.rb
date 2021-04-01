@@ -1,9 +1,7 @@
 class User
-  def initialize(member: false)
-    @member = member
-  end
+  attr_reader :role
 
-  def member?
-    @member
+  def initialize(role: 'user')
+    @role = role
   end
 end
